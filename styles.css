@@ -1,0 +1,351 @@
+
+/*esse e o box2 com o nome criptomoedas */
+.box2{
+  font-size: 10px; 
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: black;
+  color: red;
+  border: none;
+  border-radius: 30px;
+  cursor:pointer;
+  position: relative;
+}
+
+/*efetio ao passa o mause*/
+.box2:hover{
+    transition: ease-in-out;
+    cursor: pointer;
+    color: #00ffff;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+
+
+   /*aqui esta a caixa por cima da imagem */
+   .navbar {
+       position: fixed;
+       top: 20px; /*espaço da caixa no topo  */
+       left: 10px; /*espaço canto esquerdo da caixa*/
+       width: 95%; /*tamanho da caixa na orizontal*/
+       background-color: rgb(43, 42, 42);/*cor do fundo da caixa*/
+       padding: 20px 20px;
+       display: flex;
+       justify-content: space-between;
+       align-items: baseline;
+       border-bottom-left-radius:20px; /*bordas aredondadas da caixa*/
+       border-bottom-right-radius:20px;/*bordas aredondadas da caixa*/
+       border-top-left-radius:20px;/*bordas aredondadas da caixa*/
+       border-top-right-radius:20px;/*bordas aredondadas da caixa*/
+       border-bottom: 4px solid #00ffff; /*cor da borda da caixa*/
+
+   }
+
+
+    /* caixa do nome jonas*/
+   .navbar-logo {
+    font-size: 10px; /* Tamanho do ícone */
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: black;
+    color: red;
+    border: none;
+    border-radius: 30px;
+    cursor:pointer;
+    position: relative;
+   }
+
+    /* efeito do mause no nome jonas*/
+   .navbar-logo .img:hover {
+    transition: ease-in-out;
+    cursor: pointer;
+    color: #00ffff;
+    box-sizing: border-box;
+    justify-content: center;
+   }
+
+   .navbar-menu {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     margin: 0;
+     margin-right: 50px;
+   }
+   .navbar-menu li {
+     margin-left: 20px;
+     z-index: 100;
+   }
+
+   .navbar-menu li:last-child {
+       margin-right: 0;
+   }
+
+   .navbar-menu li a { /*cor do texto do meu home*/
+       text-decoration: none;
+       color: red;
+       font-size: 1rem;
+   }
+
+   .navbar-menu li a:hover { /*efeito ao passar mause meu home*/
+       color: aqua;
+   }
+
+
+
+   .navbar-hamburger {
+       display: none;
+       cursor: pointer;
+       font-size: 1.5rem;
+       color: white;
+   }
+
+   @media (max-width: 768px) {
+       .navbar-menu {
+           display: none;
+       }
+
+       .navbar-hamburger {
+           display: block;
+       }
+
+       .navbar.active .navbar-menu {
+           display: flex;
+       }
+   }
+
+ /*///////////*/
+
+ /* Estilos para o botão de Contatos */
+.contacts-button .fa-mobile-alt {
+  font-size: 18px; /* Tamanho do ícone */
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: black;
+  color: red;
+  border: none;
+  border-radius: 30px;
+  cursor:pointer;
+  position: relative;
+
+}
+
+
+/* Estilos para mostrar a seta ao passar o mouse contacts */
+.contacts-button:hover .fa-mobile-alt {
+  display: inline;
+  transition: ease-in-out;
+  cursor: pointer;
+  color: #00ffff;
+  box-sizing: border-box;
+  justify-content: center;
+ 
+}
+
+ /* Estilos para o botão de Serviços */
+ .serviços-button  {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: red;
+  border: none;
+  border-radius: 30px;
+  cursor:pointer;
+  position: relative;
+}
+
+
+/* Estilos para mostrar a seta ao passar o mouse serviços */
+.serviços-button:hover {
+  display: inline;
+  transition: ease-in-out;
+  cursor: pointer;
+  color: #00ffff;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+ /* Estilos para o botão de Sobre */
+ .sobre-button  {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: red;
+  border: none;
+  border-radius: 30px;
+  cursor:pointer;
+  position: relative;
+}
+
+
+/* Estilos para mostrar a seta ao passar o mouse sobre */
+.sobre-button:hover {
+  display: inline;
+  transition: ease-in-out;
+  cursor: pointer;
+  color: #00ffff;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+  /* Estilos para o botão de Casa */
+.home-button .fa-home {
+  font-size: 18px; /* Tamanho do ícone */
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: black;
+  color: red;
+  border: none;
+  border-radius: 30px;
+  cursor:pointer;
+  position: relative;
+
+}
+
+/* Estilos para mostrar a seta ao passar o mouse casa */
+.home-button:hover .fa-home {
+  display: inline;
+  transition: ease-in-out;
+  cursor: pointer;
+  color: #00ffff;
+  box-sizing: border-box;
+  justify-content: center;
+ 
+}
+
+.card {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  color: white;
+}
+/* caixa com a imagem btc e eth*/
+.nova-caixa-moeda {
+  position: fixed;
+  width: 95.7%;
+  height: 300px;
+  border-radius: 10px;
+  border: 5px solid #000;
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-top: 140px;
+  align-items: flex-start;
+}
+/*caixa da imagem btc*/
+.btc {
+  position: fixed;
+	border: 3px solid #3E4357;
+	border-radius: 10px;
+	width: 350px;
+	height: 500px;
+
+	display: flex;
+	overflow: hidden;
+	margin-top: 150px;
+  margin-left: 10px;
+}
+/* imagem btc*/
+.btc > p >img{
+  min-width: 100%;
+  min-height: 100%;
+  transform: transform .8s;
+}
+/* efeito de imagem btc */
+.btc > p >img:hover{
+  transform: scale(1.1);
+}
+
+
+
+/*caixa da imagem eth*/
+.eth {
+  position: fixed;
+	border: 3px solid #3E4357;
+	border-radius: 10px;
+	width: 350px;
+	height: 500px;
+
+	display: flex;
+	overflow: hidden;
+	margin-top: 150px;
+  margin-left: 500px;
+}
+/* imagem eth*/
+.eth > p >img{
+  min-width: 100%;
+  min-height: 100%;
+  transform: transform .8s;
+}
+/* efeito de imagem eth */
+.eth > p >img:hover{
+  transform: scale(1.1);
+}
+
+
+/*caixa da imagem doge*/
+.doge {
+  position: fixed;
+	border: 3px solid #3E4357;
+	border-radius: 10px;
+	width: 350px;
+	height: 500px;
+
+	display: flex;
+	overflow: hidden;
+	margin-top: 2px;
+  margin-left: 500px;
+}
+/* imagem doge*/
+.doge > p >img{
+  min-width: 100%;
+  min-height: 100%;
+  transform: transform .8s;
+}
+/* efeito de imagem doge*/
+.doge > p >img:hover{
+  transform: scale(1.1);
+}
+
+/*///////estilizando o botão de audio////////*/
+/*///////caixa do botão ////////*/
+audio {
+  width: 200px;
+  height: 20px;
+  background-color: red;
+  border: 0px solid black;
+  border-radius: 5px;
+  padding: 1px;
+  margin-top:0%;
+}
+
+/* Estilização dos controles de áudio */
+audio::-webkit-media-controls {
+  background-color: black;
+  color: white;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color:red;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #fff;
+}
+
+/* Estilização do texto alternativo */
+audio::after {
+  content: "Seu navegador não suporta o elemento de áudio.";
+  color: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
